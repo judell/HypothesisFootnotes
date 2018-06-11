@@ -58,7 +58,7 @@ function getHypIsResults(hypDotIsUrls:string[]) {
   for (let i = 0; i < hypDotIsUrls.length; i++) {
     let url = hypDotIsUrls[i]
     let id = url.match(/hyp.is\/([^\/]+)/)[1]
-    let options = {
+    let options:any = {
       method: "GET",
       url: "https://hypothes.is/api/annotations/" + id
     }
